@@ -1,0 +1,38 @@
+.login {
+  width: 20%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.login form {
+  padding: 20px
+}
+
+.register {
+  width: 30%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.register form {
+  padding: 20px
+}
+
+.index {
+  width: 30%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.welcome{
+  text-align: center;
+  background-color:bisque;
+  padding: 30px;
+  width: 500px;
+  border-radius: 2.25rem;
+}
