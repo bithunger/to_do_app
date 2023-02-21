@@ -1,4 +1,5 @@
 .login {
+  padding: 20px;
   width: 20%;
   position: absolute;
   left: 50%;
@@ -6,20 +7,13 @@
   transform: translate(-50%, -50%);
 }
 
-.login form {
-  padding: 20px
-}
-
 .register {
+  padding: 20px;
   width: 30%;
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-}
-
-.register form {
-  padding: 20px
 }
 
 .index {
@@ -29,10 +23,26 @@
   top: 50%;
   transform: translate(-50%, -50%);
 }
-.welcome{
+
+.welcome {
   text-align: center;
-  background-color:bisque;
+  background-color: bisque;
   padding: 30px;
   width: 500px;
   border-radius: 2.25rem;
+}
+
+.content-section {
+  background-color: aqua;
+  padding: 20px;
+  width: 30%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.user-head {
+  display: flex;
+  justify-content: space-between;
 }
