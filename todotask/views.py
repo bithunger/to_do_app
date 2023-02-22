@@ -15,7 +15,7 @@ def home(request):
     search = request.GET.get('search')
     if search:
         context['usertask'] = context['usertask'].filter(
-            title__startswith=search)
+            title__icontains=search)
         context['search'] = search
 
     return render(request, 'todolist/home.html', context)
