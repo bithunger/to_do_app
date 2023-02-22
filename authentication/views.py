@@ -18,7 +18,7 @@ def register(request):
         pass2 = request.POST['pass2']
         
         if User.objects.filter(username=username):
-            messages.error(request, "Username already exist- try another")
+            messages.error(request, "Username already exist")
             return redirect('register')
         
         if len(username)>10:
@@ -30,7 +30,7 @@ def register(request):
             return redirect('register')
         
         if User.objects.filter(email=email):
-            messages.error(request, "This email already have an account- try another")
+            messages.error(request, "This email already have an account")
             return redirect('register')
         
         if pass1!=pass2:
@@ -42,7 +42,7 @@ def register(request):
         user.last_name = lname
 
         user.save()
-        messages.success(request, 'Created')
+        messages.success(request, "You're account has been successfully created")
 
         return redirect('login')
 
@@ -60,7 +60,7 @@ def login(request):
             authlogin(request, user)
             if request.GET.get('next', None):
                 return redirect(request.GET['next'])
-            messages.success(request, f'Logged in')
+            messages.success(request, 'You are successfully Logged in')
             return redirect('home')
         else:
             messages.error(request, 'Bad credential')
