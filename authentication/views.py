@@ -42,7 +42,7 @@ def register(request):
         user.last_name = lname
 
         user.save()
-        messages.success(request, "You're account has been successfully created")
+        messages.success(request, "Your account has been successfully created")
 
         return redirect('login')
 
